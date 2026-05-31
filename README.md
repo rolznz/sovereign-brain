@@ -1,10 +1,8 @@
 # Sovereign Brain
 
-This is an opinionated project on how to run a local sovereign brain.
-
-## What it's for
-
 A sovereign "second brain" for brainstorming, decision making, working on **personal projects**, offloading thoughts from the human's brain - local & private.
+
+This project is quite opinionated, mostly driven by resource constraints - that almost all decent LLMs cannot run on a typical consumer PC or laptop. Here I provide a solution that actually works.
 
 ## Prerequisites
 
