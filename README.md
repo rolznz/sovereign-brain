@@ -18,8 +18,8 @@ A sovereign "second brain" for brainstorming, decision making, working on **pers
 
 1. [Download](https://github.com/rolznz/sovereign-brain/archive/refs/heads/master.zip) the sovereign brain template and extract it.
 2. Run `git init`
-2. Make sure llama is running your local model and a host and port, and pi-llama-cpp is installed and configured.
-3. Run `pi` inside the folder, and type "hi".
+3. Make sure llama is running your local model and a host and port, and pi-llama-cpp is installed and configured.
+4. Run `pi` inside the folder, and type "hi".
 
 ## License
 
