@@ -14,12 +14,13 @@ A sovereign "second brain" for brainstorming, decision making, working on **pers
 - [Pi agent](https://pi.dev/) - Your agent harness
 - [pi-llama-cpp](https://pi.dev/packages/pi-llama-cpp) - Connect your agent to local inference
 - [llama.cpp](https://github.com/ggml-org/llama.cpp) - Local inference
-- [Qwen3.6](https://huggingface.co/unsloth/Qwen3.6-35B-A3B-MTP-GGUF) - Local model
+- [Qwen3.6-35B-A3B-UD-IQ3_XXS.gguf](https://huggingface.co/unsloth/Qwen3.6-35B-A3B-MTP-GGUF) - Local model
 
 ## Getting started
 
 1. Download the template zip file and extract it.
-2. Make sure llama is running your local model and a host and port.
+2. Run `git init`
+2. Make sure llama is running your local model and a host and port, and pi-llama-cpp is installed and configured.
 3. Run `pi` inside the folder, and type "hi".
 
 ## License
