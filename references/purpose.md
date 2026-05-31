@@ -1,6 +1,6 @@
 # Purpose
 
-- A sovereign "second brain" for brainstorming, decision making, working on **personal projects**, offloading thoughts from the human's brain.
+- A sovereign "second brain" for brainstorming, decision making, working on personal projects, offloading thoughts from the human's brain.
 - Easy lookup and retrieval based on context
 - Helps connect past ideas to current thinking
 

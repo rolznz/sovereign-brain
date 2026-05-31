@@ -1,7 +1,5 @@
 # Sovereign Brain
 
-<!-- One-line description of what a sovereign brain is. -->
-
 This is an opinionated project on how to run a local sovereign brain.
 
 ## What it's for
@@ -25,4 +23,4 @@ A sovereign "second brain" for brainstorming, decision making, working on **pers
 
 ## License
 
-MIT
+The Unlicense — released into the public domain. See [LICENSE](LICENSE).
