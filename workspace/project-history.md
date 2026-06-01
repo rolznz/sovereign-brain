@@ -4,7 +4,9 @@
 
 ---
 
-<!-- TEMPLATE (ASK FOR MISSING DETAILS):
+<!-- TEMPLATE — DO NOT EDIT OR REMOVE THIS BLOCK.
+     To add a project, copy the format below into a new entry ABOVE this comment.
+     Leave this template here so it's available next time. Ask for any missing details.
 ### [Project Name]
 - **Duration:** Days/Weeks/Months
 - **Status:** Active/Shelved

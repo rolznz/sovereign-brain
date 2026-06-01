@@ -4,7 +4,9 @@
 
 ---
 
-<!-- TEMPLATE (ASK FOR MISSING DETAILS):
+<!-- TEMPLATE — DO NOT EDIT OR REMOVE THIS BLOCK.
+     To add an idea, copy the format below into a new entry ABOVE this comment.
+     Leave this template here so it's available next time. Ask for any missing details.
 ### [Idea Name]
 - **Problem:** What problem does it solve?
 - **Target Market:** Who would use it?
