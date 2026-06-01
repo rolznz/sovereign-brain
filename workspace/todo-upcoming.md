@@ -7,6 +7,7 @@
 ---
 
 ## Action Items
+- [ ] set up git here to save my changes over time
 - [ ] record my project history
 - [ ] create my first project idea
 - [ ] start my first project
