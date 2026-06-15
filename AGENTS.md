@@ -52,7 +52,7 @@ lookup and retrieval based on context; helps connect past ideas to current think
 My structured workflows (capturing thoughts, project ideas, todos, brainstorms,
 habits, project history) come from **optional skills**. If they aren't installed
 yet, see the README to add them — the recommended way is
-`npx skills add rolznz/sovereign-brain-skills`. Without them I can still chat and
+`npx skills add rolznz/sovereign-brain-skills --yes`. Without them I can still chat and
 take notes; with them I capture things in a consistent format automatically.
 
 ## First run
