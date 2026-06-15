@@ -40,16 +40,16 @@ at it, backed by a local model.
 > multipass shell sovereign-brain
 > ```
 
-1. [Download](https://github.com/rolznz/sovereign-brain/archive/refs/heads/master.zip)
-   the template and extract it (or use it as a GitHub template).
-2. Run `git init` inside the folder (local only — no online backup).
-3. Have a local model running (see [Run a local model](#run-a-local-model) below).
-4. Point your agent at the folder and say "hi". That's your sovereign brain, alive. 🧠
-5. Add skills:
+1. Make a new, empty folder and download
+   [`AGENTS.md`](https://raw.githubusercontent.com/rolznz/sovereign-brain/refs/heads/master/AGENTS.md)
+   into it:
 
    ```sh
-   npx skills add rolznz/sovereign-brain-skills
+   mkdir my-brain && cd my-brain
+   curl -O https://raw.githubusercontent.com/rolznz/sovereign-brain/refs/heads/master/AGENTS.md
    ```
+2. Have a local model running (see [Run a local model](#run-a-local-model) below).
+3. Open your agent in that folder and type **`start`**. It'll guide you from there. 🧠
 
 ## Run a local model
 
