@@ -24,9 +24,11 @@ at it, backed by a local model.
 
 ## Prerequisites
 
-- Local machine with at least 32GB RAM
+- Local machine with at least 32GB RAM — or as little as 8GB if you use the
+  smaller Bonsai 27B model (see below)
 - A local LLM — e.g. [llama.cpp](https://github.com/ggml-org/llama.cpp) serving
-  [Qwen3.6-35B-A3B](https://huggingface.co/unsloth/Qwen3.6-35B-A3B-MTP-GGUF)
+  [Qwen3.6-35B-A3B](https://huggingface.co/unsloth/Qwen3.6-35B-A3B-MTP-GGUF) or
+  [Bonsai 27B](https://huggingface.co/prism-ml/Bonsai-27B-gguf)
 - An agent harness that reads `AGENTS.md` (and, ideally, Agent Skills) — bring your own
 
 ## Getting started
@@ -55,10 +57,17 @@ at it, backed by a local model.
 
 ### 1. Start the model download (do this first — it's large)
 
-The model file is several GB, so kick it off before anything else. I recommend the
-**3-bit XXS quant** — small but still smart enough to do the job:
+The model file is several GB, so kick it off before anything else.
+
+**32GB+ RAM:** Qwen3.6-35B-A3B is the best model for the job. I recommend the
+**3-bit XXS quant** — small but still smart enough:
 
 - [Qwen3.6-35B-A3B-UD-IQ3_XXS.gguf](https://huggingface.co/unsloth/Qwen3.6-35B-A3B-MTP-GGUF?show_file_info=Qwen3.6-35B-A3B-UD-IQ3_XXS.gguf)
+
+**Less RAM (as little as 8GB):** grab the **1-bit Bonsai 27B** instead — a 3.9GB
+download that's not as sharp as Qwen but still handles tool calling reliably:
+
+- [Bonsai-27B-Q1_0.gguf](https://huggingface.co/prism-ml/Bonsai-27B-gguf?show_file_info=Bonsai-27B-Q1_0.gguf)
 
 ### 2. Set up llama.cpp (the inference engine)
 
@@ -91,6 +100,9 @@ Once the `.gguf` has finished downloading, start the server:
 > **Tune for your machine.** The flags above are tuned for an **NVIDIA 4060
 > laptop**. Adjust `-ngl` (layers offloaded to the GPU), `-ncmoe` (expert layers
 > kept on the CPU), and `-c` (context size) depending on your hardware.
+>
+> **Running Bonsai 27B instead?** Point `-m` at `Bonsai-27B-Q1_0.gguf` and drop
+> the `-ncmoe` flag — it's a dense model, so there are no expert layers to place.
 
 llama.cpp prints a URL when it starts — open it and confirm you can chat with the
 LLM. You now have a local LLM running; point your agent harness at it.
